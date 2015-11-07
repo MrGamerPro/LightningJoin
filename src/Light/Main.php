@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener {
     	$this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
    public function onCommand(CommandSender $sender,Command $cmd,$label,array $args) {
-    if((strtolower($cmd->getName()) == "strike") && isset($args[0])) {
+    if((strtolower($cmd->getName()) == "zap") && isset($args[0])) {
       if($this->getServer()->getPlayer($args[0]) instanceof Player) {
         $sender->sendMessage("Player not connected");
        } else {
